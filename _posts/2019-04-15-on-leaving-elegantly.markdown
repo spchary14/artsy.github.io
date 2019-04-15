@@ -1,0 +1,161 @@
+---
+layout: epic
+title: "How to leave elegantly"
+date: "2019-04-15"
+author: [orta]
+categories: [culture, process]
+# comment_id: 554
+---
+
+I've been at Artsy for seven and a half years, and I'm heading out to go work on the TypeScript programming
+language at Microsoft. This wasn't a surprise to my close collaborators, but likely was a surprise for the rest of
+the company and externally.
+
+I want to talk through how I tried to prepare the company for my departure by de-coupling myself from owning
+important code and processes, and by setting up many people to push Artsy's engineering culture forward.
+
+<!-- more -->
+
+## My Role at Artsy
+
+I'm an Engineer who has been at Artsy since close to the beginning. Artsy has a few pretty complex businesses, and
+I've touched most of them in some way. I've always aimed to ensure that engineering in Artsy doesn't feel
+disconnected to the rest of the company, and I spend quite a lot of time talking externally (I account for over a
+quarter of the blog posts on this site for example) about our work.
+
+<!--
+require "yaml"
+YAML_FRONT_MATTER_REGEXP = /\A(---\s*\n.*?\n?)^((---|\.\.\.)\s*$\n?)/m
+
+ortas_posts = Dir.glob("*").select { |f|
+  content = File.read(f)
+  found = false
+  if content =~ YAML_FRONT_MATTER_REGEXP
+    data, content = YAML.load($1), Regexp.last_match.post_match
+    if data["author"] == "orta" || data["author"].include?("orta")
+      found = true
+    end
+    puts data
+  end
+  found
+}
+
+ortas_posts.length
+ -->
+
+## On Leaving
+
+Reasonably speaking, I'm a pretty open book. For the last 9 years I have publicly written a pretty personal annual
+write-up of the ups and downs of my life, my relationships to Open Source and Artsy. They're available on my
+website [orta.io][]. Almost all the engineers who I spoke to about leaving said that it fit with my last write-up.
+
+I didn't want to leave until I had deprecated myself.
+
+Regardless, as engineers this should be a constant goal for yourself. Doing so leaves a lot of space for personal
+growth for yourself and for the people who will take up the mantle after you.
+
+Throughout my career at Artsy I've changed roles regularly as Artsy has grown and changed. When Artsy needed an iOS
+engineering team, I became a manager, then when we moved to React Native and de-siloed the team - we didn't need
+that anymore and I went back to being an individual contributor and someone who made more sense took those
+responsibilities. This is one of my favourite things about start-ups, they change often. If you're creative, put
+the time in and are open to being uncomfortable occasionally then there are all sorts of experiences ahead.
+
+In 2018 what Artsy needed was someone to look holistically at the Engineering team from the inside. I picked up a
+chunk of soft-skill responsibilities in order to ensure Artsy's Engineering was in tip-top shape, working on
+everything from hiring to team cohesion.
+
+# Rebasing Responsibilities
+
+7.5 years is a long time! I found quite a few ways to distribute my responsibilities, these aren't just useful
+tactics if you're leaving, but valid when your circumstances change.
+
+### Split your roles into smaller pieces, and with a tighter and more obvious scope
+
+A good example of splitting roles came from owning all of the front-end practice at Artsy. Effectively making sure
+we had common goals and were sharing our best ideas across web and mobile. I realised that there were people
+interested in owning subsets of the global front-end practice and if I split it into web and iOS they would have
+the opportunity to give each platform more focus.
+
+### Build process changing tools, use them yourself to set an example, then lay off the gas
+
+Throughout 2018 I spent a lot of time improving Artsy's engineering culture, mostly [using RFCs][rfcs]. In 2019 I
+stopped creating new RFCs and only worked on RFCs as a co-signer which was owned by someone else. When I slowed
+down creating RFCs, others picked up and made changes in ways I would never have focused on. This is perfect space
+for an engineering team to be in.
+
+### Create working groups to allow many people to work on a problem collectively
+
+I have always been a good fallback for ownership of projects which fall between the gaps between teams. For
+example, I own our company dashboard and our internal team navigator. While these projects are important but they
+would really need an engineering focused on internal tools to get changes added to a roadmap. Given Artsy's size
+today, that's not likely to happen.
+
+To try mitigate a single point of failure, I created one of the first engineering working groups in Artsy. It's job
+being to be a monthly meetup between our workplace team and engineering to keep track of any high impact easy wins
+for internal culture. Anyone was welcome to join from engineering, and over time new folks started showing up and
+helping.
+
+### Mentor potential successors
+
+I don't expect anyone to directly replace me, but this is a common tactic when leaving, but when someone shows any
+related interest - dive in and offer anything to help them. Mid 2018 I opened up some extra 1 on 1 spaces in my
+calendar (by consolidating them all to one single day every 2 weeks) and specifically targeted folks who I think
+would do a good job at taking some of responsibilities over time.
+
+That said, I [specifically targeted][twitr] getting at least one person who would care about tooling in a way that
+echoes my opinions when hiring, and that worked out well.
+
+### Document everything
+
+If you do enough [defensive OSS][def-oss], you learn the value of the up-front cost of docs vs long term questions
+from people. Even internally I try to write docs for someone's question rather than answering directly. This
+pattern of externalizing answers inspires a hefty amount of my blog posts on the Artsy blog, while writing this way
+can be slower, that answer can be more thoughtful and better articulated.
+
+In terms of code documentation, I've been sneaking documentation updates to as many projects as I can. For example,
+on a project with a pretty low [number of contributors][energy-contrib] I added documentation specifically aimed at
+providing coverage of [features per-screen][energy-map].
+
+### Cleaning the backlog
+
+When there's a time limit, it really helps you focus on getting some of those long running PRs in. I shipped a
+feature that I had been working [on and off for 5 years][folio-album-sync] last month.
+
+I'm currently going through a process of hitting all my backlog posts for the Artsy blog, as well as trying to
+cement the reasoning for things I think are worth keeping around. Ultimately though, it's up to the rest of the
+engineering team to decide whether a cultural pattern is worth keeping or a project is worth maintaining.
+
+## Letting People Know
+
+I spent a considerable amount of time thinking about this. I'm not sure there's a perfect way, but I can at least
+talk to what I did. I had a few aims: tell people individually then in groups, strive for as natural a setting as
+possible and make it easy to know who knows so far.
+
+I structured my timeline to look roughly like:
+
+- Inform my manager + direct collaborators when I was taking informationals (maybe 2-3 months prior to signing)
+- 1st week after signing - all collaborators, this came to roughly 60 people across the company
+- 2nd week, Monday - ensure all dev knows by announcing it at stand-up
+- 2nd week, Tuesday - email all of the team
+- 2nd week, Wednesday - let the internet know
+
+For the first week I used a private slack channel where I added people as I told them, it turned into a pretty fun
+support group channel for light-hearted jabs and interesting discussions.
+
+A week is quite a while to keep the announcement somewhat secretive, but in general it held. This gave me the
+chance to answer a lot of questions, and I came home drained every night. I feel like I did the right thing.
+
+## Final Days
+
+When I considered what the right thing to do with my final days, I felt tht some of the best value I can give to
+Artsy is in providing historical context. That's why I've been shipping so many blog posts in 2019. I'd like to try
+dig deeper and pull out some interesting stories from other oldbies at the company. I'm also going to create an
+alumni network, so it's easy to keep in touch with Artsy folks because I'm going to miss a lot of them.
+
+[orta.io]: https://orta.io
+[rfcs]: /blog/2019/04/11/on-an-rfcs-process/
+[twitr]: https://twitter.com/orta/status/954085934781358081
+[def-oss]: /blog/2016/07/03/handling-big-projects/#Issues
+[energy-contrib]: https://github.com/artsy/energy/graphs/contributors
+[energy-map]: https://github.com/artsy/energy/blob/master/docs/feature_map.md
+[folio-album-sync]: https://github.com/artsy/energy/pull/189
