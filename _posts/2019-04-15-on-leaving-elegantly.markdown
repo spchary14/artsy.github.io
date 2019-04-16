@@ -23,6 +23,12 @@ I've touched most of them in some way. I've always aimed to ensure that engineer
 disconnected to the rest of the company, and I spend quite a lot of time talking externally (I account for over a
 quarter of the blog posts on this site for example) about our work.
 
+Strictly speaking, none (and all) of these are in my job role which has evolved over the years to a kind of
+architect-ish role of knowing [a lot about everything][shallow] and mainly assisting people work on those, plus
+making infrastructure which allow [others][danger] [to][peril] [do][docs] [more][stitching] with less. Which makes
+leaving leaving a bit tricky, I might not own a lot of things, but a lot of my value has been in the soft-skills
+in-between.
+
 <!--
 require "yaml"
 YAML_FRONT_MATTER_REGEXP = /\A(---\s*\n.*?\n?)^((---|\.\.\.)\s*$\n?)/m
@@ -125,6 +131,72 @@ I'm currently going through a process of hitting all my backlog posts for the Ar
 cement the reasoning for things I think are worth keeping around. Ultimately though, it's up to the rest of the
 engineering team to decide whether a cultural pattern is worth keeping or a project is worth maintaining.
 
+## Give your company the best chance to make a competing offer
+
+I wanted to give Artsy the best chance to compete with an offer like the one from TypeScript. One of the best
+strategies for this came up when speaking with Samuel, our VP of Engineering. He recommended that I imagine that I
+didn't work at Artsy, and figure out the job role which would be the most attractive to me.
+
+I explored this idea and created a really compelling job role which fit for both Artsy and me. It was a refreshing
+take what I've enjoyed from my time with Artsy, and things I'm interested in doing in the future. I ended up
+scoping out something like this:
+
+```
+## Head of OSS at Artsy
+
+Roughly:
+- Make Artsy OSS Awesome
+- Help ship big things in parallel work streams with product
+- Make it fun and full of growth to be at Artsy
+
+Goal: Ensure Artsy OSS thrives.
+Aim: Externally cement that Artsy's tech credentials are solid, and provide external stimulus for Art-world folks to work with us
+
+- ~ 4–5 tech conference talks a year
+- ~ 1-2 arts conferences/fairs/panels a year
+- ~ 12 solo blog posts per year
+
+- Also:
+  - Ensuring every major tech launch has a write-up (e.g. New Selling Options, Show Guide )
+  - Ensuring all libraries we OSS are documented, tested, and usable outside of Artsy
+  - Helping internal engineers from those teams write public talks about the launches and what we had to build
+
+Goal: Help ship longer-term perspective which runs parallel to the roadmap
+Aim: Help make the team make less short-term choices
+
+Work with one other person to ship some of the things Artsy has found difficult to work due to
+roadmap tradeoffs, but that we feel needs to get done eventually:
+
+- Explore building standalone services for model domains (artworks/partners/shows etc)
+- Work on how we can we standardize admin UIs
+- Provide a technical roadmap, and own what it takes to ship an android app
+- Own the third party API (handle legal rights, own docs + evolution)
+- Consolidate JS tooling into something which sits above express/rails/react-native
+
+These are projects we've regularly said "want to do that, but it'd block shipping X or Y", where
+as a team we consciously decide to continue a larger technical debt in favour of shipping something.
+
+Goal: Maintain and improve Artsy's culture
+Aim: Make Artsy feel like an awesome place to work
+
+Run events:
+
+- Demo Days
+- Lunch & Learns
+- Provide more support to initiatives like Artsy Learns to Code
+- Explore
+
+Cohesion:
+- Focus on 1on1s with product + designers to help them grow
+- Run workshops for all of Artsy to help raise technical awareness
+```
+
+This takes some of the things I was already doing on the side, and moves them forefront as well as trying to work
+well with the rest of the company and ship some big things. I think the idea of "what is an optimal offer for your
+current company" is a pretty good pattern for anyone who has a long tenure at a company to explore. It gives your
+current company a way to show off it's best attributes and you already have the existing relationships to make it
+work.
+
 ## Letting People Know
 
 I spent a considerable amount of time thinking about this. I'm not sure there's a perfect way, but I can at least
@@ -134,13 +206,13 @@ possible and make it easy to know who knows so far.
 I structured my timeline to look roughly like:
 
 - Inform my manager + direct collaborators when I was taking informationals (maybe 2-3 months prior to signing)
-- 1st week after signing - all collaborators, this came to roughly 60 people across the company
-- 2nd week, Monday - ensure all dev knows by announcing it at stand-up
-- 2nd week, Tuesday - email all of the team
+- 1st week after signing - all collaborators, this came to roughly 120 people across the company
+- 2nd week, Monday - ensure all dev knows by announcing it at our team stand-up
+- 2nd week, Tuesday - email most of the team
 - 2nd week, Wednesday - let the internet know
 
-For the first week I used a private slack channel where I added people as I told them, it turned into a pretty fun
-support group channel for light-hearted jabs and interesting discussions.
+For the first week I used a private slack channel (called the [oort-cloud][oort]) where I added people as I told
+them, it turned into a pretty fun support group channel for light-hearted jabs and interesting discussions.
 
 A week is quite a while to keep the announcement somewhat secretive, but in general it held. This gave me the
 chance to answer a lot of questions, and I came home drained every night. I feel like I did the right thing.
@@ -159,3 +231,9 @@ alumni network, so it's easy to keep in touch with Artsy folks because I'm going
 [energy-contrib]: https://github.com/artsy/energy/graphs/contributors
 [energy-map]: https://github.com/artsy/energy/blob/master/docs/feature_map.md
 [folio-album-sync]: https://github.com/artsy/energy/pull/189
+[danger]: https://artsy.github.io/blog/2017/06/30/danger-one-oh-again/
+[peril]: https://artsy.github.io/blog/2017/09/04/Introducing-Peril/
+[shallow]: https://artsy.github.io/blog/2018/08/10/On-Context-Switching/
+[docs]: https://artsy.github.io/blog/2018/08/21/OSS-by-Default-Docs/
+[stitch]: https://artsy.github.io/blog/2018/12/11/GraphQL-Stitching/
+[oort]: https://en.wikipedia.org/wiki/Oort_cloud
