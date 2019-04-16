@@ -85,9 +85,11 @@ the opportunity to give each platform more focus.
 ### Build process changing tools, use them yourself to set an example, then lay off the gas
 
 Throughout 2018 I spent a lot of time improving Artsy's engineering culture, mostly [using RFCs][rfcs]. In 2019 I
-stopped creating new RFCs and only worked on RFCs as a co-signer which was owned by someone else. When I slowed
-down creating RFCs, others picked up and made changes in ways I would never have focused on. This is perfect space
-for an engineering team to be in.
+stopped creating new RFCs and only worked on RFCs as a co-signer which was owned by someone else.
+
+In 2019, we started to see a much more diverse set of engineers writing new RFCs which give the team access to a
+lot of new and interesting ideas and the RFC process has never been as active. I'm really proud of the work others
+are doing with this process.
 
 ### Create working groups to allow many people to work on a problem collectively
 
@@ -96,10 +98,12 @@ example, I own our company dashboard and our internal team navigator. While thes
 would really need an engineering focused on internal tools to get changes added to a roadmap. Given Artsy's size
 today, that's not likely to happen.
 
-To try mitigate a single point of failure, I created one of the first engineering working groups in Artsy. It's job
-being to be a monthly meetup between our workplace team and engineering to keep track of any high impact easy wins
+To try mitigate a single point of failure, I created one of the first engineering working groups in Artsy. With the
+focus being an intersection between our workplace team and engineering to keep track of any high impact easy wins
 for internal culture. Anyone was welcome to join from engineering, and over time new folks started showing up and
 helping.
+
+Since then working groups have popped up everywhere in Artsy,
 
 ### Mentor potential successors
 
@@ -108,8 +112,8 @@ related interest - dive in and offer anything to help them. Mid 2018 I opened up
 calendar (by consolidating them all to one single day every 2 weeks) and specifically targeted folks who I think
 would do a good job at taking some of responsibilities over time.
 
-That said, I [specifically targeted][twitr] getting at least one person who would care about tooling in a way that
-echoes my opinions when hiring, and that worked out well.
+That said, we [specifically targeted][twitr] getting at least one person who would care about tooling in a way that
+echoes my opinions when hiring, and that worked out well. We've been seeing more
 
 ### Document everything
 
@@ -117,6 +121,10 @@ If you do enough [defensive OSS][def-oss], you learn the value of the up-front c
 from people. Even internally I try to write docs for someone's question rather than answering directly. This
 pattern of externalizing answers inspires a hefty amount of my blog posts on the Artsy blog, while writing this way
 can be slower, that answer can be more thoughtful and better articulated.
+
+I took the time to focus a lot of our documentation across all of engineering into two centralized places (one in
+the open (default) one private (fallback)) which dramatically increased the number contributors to team
+documentation across the company.
 
 In terms of code documentation, I've been sneaking documentation updates to as many projects as I can. For example,
 on a project with a pretty low [number of contributors][energy-contrib] I added documentation specifically aimed at
@@ -137,9 +145,9 @@ I wanted to give Artsy the best chance to compete with an offer like the one fro
 strategies for this came up when speaking with Samuel, our VP of Engineering. He recommended that I imagine that I
 didn't work at Artsy, and figure out the job role which would be the most attractive to me.
 
-I explored this idea and created a really compelling job role which fit for both Artsy and me. It was a refreshing
-take what I've enjoyed from my time with Artsy, and things I'm interested in doing in the future. I ended up
-scoping out something like this:
+We explored this idea and created a really compelling job role which fit for both Artsy and me. It was a refreshing
+take what I've enjoyed from my time with Artsy, and things I'm interested in doing in the future. It ended up like
+this:
 
 ```
 ## Head of OSS at Artsy
@@ -221,8 +229,11 @@ chance to answer a lot of questions, and I came home drained every night. I feel
 
 When I considered what the right thing to do with my final days, I felt tht some of the best value I can give to
 Artsy is in providing historical context. That's why I've been shipping so many blog posts in 2019. I'd like to try
-dig deeper and pull out some interesting stories from other oldbies at the company. I'm also going to create an
+dig deeper and pull out some interesting stories from other oldbies at the company. I'm also going to improve our
 alumni network, so it's easy to keep in touch with Artsy folks because I'm going to miss a lot of them.
+
+I got a lot of recommendations to take time off between jobs, considering I have been focusing my thinking around
+Artsy for a very long time then finding a mental space where you can felt empty sounded compelling.
 
 [orta.io]: https://orta.io
 [rfcs]: /blog/2019/04/11/on-an-rfcs-process/
